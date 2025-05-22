@@ -1,0 +1,133 @@
+/* gallery.css */
+
+/* Video container */
+/* .video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .video-container video,
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+   */
+/* gallery.css */
+
+/* Default styles for next button */
+.slick-next {
+    margin-right: -20px;
+    
+  color: #f4f4f4 !important; /* Arrow color */
+  background-color: rgba(255, 255, 255, 0.5) !important; /* Optional background color */
+  border-radius: 50% !important; /* Optional rounded button */
+  width: 40px; /* Optional width */
+  height: 40px; /* Optional height */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover styles for next button */
+.slick-next:hover {
+    color: #101010  !important; /* Change arrow color on hover */
+    background-color: rgba(0, 0, 0, 0.8)  !important; /* Darker background on hover */
+    display: flex  !important;
+    align-items: center  !important;
+    justify-content: center  !important;
+}
+
+/* Default styles for previous button */
+.slick-prev {
+    margin-left: -20px;
+  color: #00ff00  !important; /* Arrow color */
+  background-color: rgba(255, 255, 255, 0.5)  !important; /* Optional background color */
+  border-radius: 50%; /* Optional rounded button */
+  width: 40px; /* Optional width */
+  height: 40px; /* Optional height */
+  display: flex  !important;
+  position: relative  !important;
+  /* left: 0px  !important; */
+  align-items: center  !important;
+  justify-content: center  !important;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover styles for previous button */
+.slick-prev:hover {
+  color: #101010  !important; /* Change arrow color on hover */
+  background-color: rgba(0, 0, 0, 0.8)  !important; /* Darker background on hover */
+  display: flex  !important;
+  align-items: center  !important;
+  justify-content: center  !important;
+}
+
+/* Optional: Adjust the size of the arrow icon */
+.slick-next:before, .slick-prev:before {
+  font-size: 24px  !important; /* Adjust the size of the arrow icon */
+  display: flex  !important;
+  align-items: center  !important;
+  justify-content: center  !important;
+}
+
+
+/* Ensure default arrow images are hidden */
+.slick-next:before,
+.slick-prev:before {
+  display: none ; /* Hide any content from the :before pseudo-element */
+}
+
+/* Ensure no content is displayed with the :after pseudo-element */
+.slick-next:after,
+.slick-prev:after {
+  display: none ; /* Hide any content from the :after pseudo-element */
+}
+
+
+.slick-next:before {
+  color: #2AB6C5  !important; /* Change arrow color on hover */
+
+    content: '\f054' !important; /* Font Awesome right arrow icon */
+    font-family: 'Font Awesome 5 Free' !important; /* Font Awesome 5 */
+    font-weight: 900 !important; /* Necessary for solid icons */
+    font-size: 24px !important; /* Size of the icon */
+  }
+  .slick-prev:before {
+  color: #2AB6C5  !important; /* Change arrow color on hover */
+
+    content: '\f053' !important; /* Font Awesome right arrow icon */
+    font-family: 'Font Awesome 5 Free' !important; /* Font Awesome 5 */
+    font-weight: 900 !important; /* Necessary for solid icons */
+    font-size: 24px !important; /* Size of the icon */
+  }
+  .slick-prev:active{
+  color: #2ac56d  !important; /* Change arrow color on hover */
+
+  }
+
+  /* Media query for mobile devices (e.g., 480px and up) */
+  @media (max-width: 480px) {
+    .slick-next,
+    .slick-prev {
+        display: none  !important;
+      width: 25px; /* Smaller width for mobile */
+      height: 25px; /* Smaller height for mobile */
+    }
+  
+    .slick-next:after,
+    .slick-prev:after {
+      font-size: 16px; /* Smaller icon size for mobile */
+    }
+  
+    .slick-next {
+      right: 2px; /* Adjust position for mobile */
+    }
+  
+    .slick-prev {
+      left: 2px; /* Adjust position for mobile */
+    }
+  }
